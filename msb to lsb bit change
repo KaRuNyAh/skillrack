@@ -1,0 +1,30 @@
+
+#include <stdio.h>
+int main()
+{
+    printf("Hello World");
+int i,n,k;k=0;int temp;temp=0;
+scanf("%d",&n);
+char ch[7];
+for(i=0;n>0;i++)
+{
+ch[i]=n%2;
+n=n/2;
+}
+k=i;
+printf("originalbit ");
+for(k=k-1;k>=0;k--){
+printf("%d",ch[k]);
+    
+}
+temp=ch[0];
+ch[0]=ch[i-1];
+ch[i-1]=temp;
+printf("\n");
+printf("msb lsb interchanged bit ");
+for(i=i-1;i>=0;i--){
+printf("%d",ch[i]);
+    
+}
+}
+
