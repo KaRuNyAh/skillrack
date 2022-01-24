@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+int n,diff,val;
+scanf("%d",&n);
+for(int i=0;i<=n;i++){
+    diff=n-1;
+    val=n*(n+1)/2-i;
+    for(int j=1;j<=n-i;j++){
+        printf("%d ",val);
+        diff--;
+        val=val-diff-1;
+    }
+    if(i!=n)
+    printf("\n");
+}
+}
